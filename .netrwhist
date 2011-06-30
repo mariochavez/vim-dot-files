@@ -1,0 +1,10 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='/Users/marioch/Development/proyectos/105_looks'
+let g:netrw_dirhist_2='/Users/marioch/Development/proyectos/aarapp'
+let g:netrw_dirhist_3='/Users/marioch/Development/proyectos/105_looks'
+let g:netrw_dirhist_4='/Users/marioch/Development/proyectos/aarapp'
+let g:netrw_dirhist_5='/Users/marioch/Development/proyectos/105_looks'
+let g:netrw_dirhist_6='/Users/marioch/Development/proyectos/temp/startup_weekend'
+let g:netrw_dirhist_7='/Users/marioch/Development/proyectos/105_looks'
+let g:netrw_dirhist_8='/Users/marioch/.vim/bundle'
