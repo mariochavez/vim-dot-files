@@ -11,6 +11,7 @@ colorscheme solarized
 set nocompatible
 
 set modelines=0
+set listchars+=trail:░
 
 set guifont=Menlo:h18
 set tabstop=4

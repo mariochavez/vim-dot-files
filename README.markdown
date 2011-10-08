@@ -5,3 +5,8 @@ ln -s ~/.vim/gvimrc ~/.gvimrc
 cd ~/.vim
 git submodule init
 git submodule update
+
+VIM Room
+==========
+Info: http://projects.mikewest.org/vimroom/
+<leader>V
