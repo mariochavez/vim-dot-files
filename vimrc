@@ -1,15 +1,18 @@
-:colorscheme slate
 
 filetype off
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 filetype plugin indent on
 
+syntax enable
+set background=dark
+colorscheme solarized
+
 set nocompatible
 
 set modelines=0
 
-set guifont=Inconsolata:h20
+set guifont=Menlo:h18
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
@@ -65,6 +68,9 @@ nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
+
+nnoremap <leader>rc :!bundle exec cucumber --tags @dev 
+nnoremap <leader>rs :!bundle exec rspec spec --tag dev:true
 
 imap <C-l> <Space>=><Space>
 
