@@ -22,3 +22,6 @@
 [submodule "bundle/vim-greplace"]
 	path = bundle/vim-greplace
 	url = https://github.com/skwp/greplace.vim.git
+[submodule "vim-colors-solarized"]
+	path = vim-colors-solarized
+	url = git://github.com/altercation/vim-colors-solarized.git
