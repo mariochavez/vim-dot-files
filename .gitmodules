@@ -28,3 +28,6 @@
 [submodule "bundle/vimroom"]
 	path = bundle/vimroom
 	url = https://github.com/mikewest/vimroom.git
+[submodule "bundle/snipmate"]
+	path = bundle/snipmate
+	url = https://github.com/msanders/snipmate.vim.git
