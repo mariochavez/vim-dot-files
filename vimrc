@@ -66,6 +66,7 @@ nnoremap <leader>ev <C-w><C-v><C-l>:e $MYVIMRC<cr>
 nnoremap <leader>fl :CommandTFlush
 inoremap jj <ESC>
 nnoremap <leader>w <C-w>v<C-w>l
+nnoremap <leader>h <C-w>new<C-w>l
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
