@@ -15,9 +15,9 @@ set modelines=0
 set listchars+=trail:░
 
 set guifont=Menlo:h18
-set tabstop=4
-set shiftwidth=4
-set softtabstop=4
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
 set expandtab
 
 set encoding=utf-8
@@ -57,6 +57,7 @@ set colorcolumn=85
 
 nnoremap ; :
 au FocusLost * :wa
+au InsertLeave * :%s=\s\+$==
 
 nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<CR>
 nnoremap <leader>ft Vatzf
