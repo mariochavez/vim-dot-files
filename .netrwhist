@@ -1,9 +1,9 @@
 let g:netrw_dirhistmax  =10
 let g:netrw_dirhist_cnt =7
-let g:netrw_dirhist_1='/Users/marioch/Development/proyectos/billfloat/features/support'
-let g:netrw_dirhist_2='/Users/marioch/Development/proyectos/billfloat'
-let g:netrw_dirhist_3='/Users/marioch/Development/proyectos/billfloat/spec'
-let g:netrw_dirhist_4='/Users/marioch/Development/proyectos/billfloat/spec/presenters'
-let g:netrw_dirhist_5='/Users/marioch/Development/proyectos/billfloat'
-let g:netrw_dirhist_6='/Users/marioch/Development/proyectos/billfloat/features'
-let g:netrw_dirhist_7='/Users/marioch/Development/proyectos/billfloat/features/dashboard'
+let g:netrw_dirhist_1='/Users/marioch/Development/proyectos/billfloat-mobile/config'
+let g:netrw_dirhist_2='/Users/marioch/Development/proyectos'
+let g:netrw_dirhist_3='/Users/marioch/Development/proyectos/GiveVoice'
+let g:netrw_dirhist_4='/Users/marioch/Development/proyectos/GiveVoice/app'
+let g:netrw_dirhist_5='/Users/marioch/Development/proyectos/GiveVoice/app/models'
+let g:netrw_dirhist_6='/Users/marioch/Development/proyectos/GiveVoice/app'
+let g:netrw_dirhist_7='/Users/marioch/Development/proyectos/GiveVoice/app/controllers'

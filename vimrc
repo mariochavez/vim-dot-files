@@ -38,6 +38,7 @@ set relativenumber
 set undofile
 
 let mapleader = ","
+
 nnoremap / /\v
 vnoremap / /\v
 set ignorecase
@@ -57,7 +58,9 @@ set colorcolumn=85
 
 nnoremap ; :
 au FocusLost * :wa
-au InsertLeave * :%s=\s\+$==
+" au InsertLeave * :%s=\s\+$==
+autocmd BufWritePre * :%s/\s\+$//e
+autocmd BufWritePre * :%s/\t/  /e
 
 nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<CR>
 nnoremap <leader>ft Vatzf
@@ -68,12 +71,14 @@ nnoremap <leader>fl :CommandTFlush
 inoremap jj <ESC>
 nnoremap <leader>w <C-w>v<C-w>l
 nnoremap <leader>h <C-w>new<C-w>l
+nnoremap <leader>mv <C-w>H
+nnoremap <leader>mh <C-w>K
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
-nnoremap <leader>rc :!bundle exec cucumber --tags @dev 
+nnoremap <leader>rc :!bundle exec cucumber --tags @dev
 nnoremap <leader>rs :!bundle exec rspec spec --tag dev:true
 
 imap <C-l> <Space>=><Space>
