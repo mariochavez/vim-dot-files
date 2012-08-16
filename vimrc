@@ -78,6 +78,9 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
+" Yank to clipboard
+vmap <C-c> "+y
+
 nnoremap <leader>rc :!bundle exec cucumber --tags @dev
 nnoremap <leader>rs :!bundle exec rspec spec --tag dev:true
 
