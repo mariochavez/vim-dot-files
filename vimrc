@@ -101,6 +101,9 @@ if exists(":Tabularize")
     vmap <Leader>a: :Tabularize /:\zs<CR>
 endif
 
+" Easy Buffer
+nmap <Leader>eb :EasyBuffer<CR>
+
 let Tlist_Ctags_Cmd='/usr/local/bin/ctags'
 
 map <F2> :NERDTreeToggle<cr>
