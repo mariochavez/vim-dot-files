@@ -1,10 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =8
-let g:netrw_dirhist_1='/Users/marioch/Development/proyectos/billfloat'
-let g:netrw_dirhist_2='/Users/marioch/Development/proyectos/billfloat/spec'
-let g:netrw_dirhist_3='/Users/marioch/Development/proyectos/billfloat/spec/coffeescripts'
-let g:netrw_dirhist_4='/Users/marioch/Development/proyectos/billfloat/spec/coffeescripts/models'
-let g:netrw_dirhist_5='/Users/marioch/Development/proyectos/hrbb/spec'
-let g:netrw_dirhist_6='/Users/marioch/Development/proyectos/hrbb/app/assets/stylesheets'
-let g:netrw_dirhist_7='/Users/marioch/Development/proyectos/hrbb/app/assets/stylesheets/hrbb'
-let g:netrw_dirhist_8='/Users/marioch/Development/proyectos/billfloat'
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/Users/marioch/Development/proyectos/billfloat_api_client/lib'
+let g:netrw_dirhist_2='/Users/marioch/Development/proyectos/billfloat_api_client/lib/billfloat_api_client'
+let g:netrw_dirhist_3='/Users/marioch/Development/proyectos/billfloat_api_client/lib/billfloat_api_client/proxies'
+let g:netrw_dirhist_4='/Users/marioch/Development/proyectos/hrbb/app/assets/javascripts/hrbb'
