@@ -49,3 +49,6 @@
 [submodule "bundle/easybuffer"]
 	path = bundle/easybuffer
 	url = git://github.com/troydm/easybuffer.vim.git
+[submodule "bundle/vim-gitgutter"]
+	path = bundle/vim-gitgutter
+	url = git://github.com/airblade/vim-gitgutter.git
