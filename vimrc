@@ -64,6 +64,7 @@ autocmd BufWritePre * :%s/\t/  /e
 
 nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<CR>
 nnoremap <leader>ft Vatzf
+nnoremap <leader>ff gg=G
 nnoremap <leader>q gqip
 nnoremap <leader>v V`]
 nnoremap <leader>ev <C-w><C-v><C-l>:e $MYVIMRC<cr>
