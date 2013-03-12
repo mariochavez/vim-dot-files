@@ -84,6 +84,9 @@ vmap <C-c> "+y
 
 nnoremap <leader>rc :!bundle exec cucumber --tags @dev
 nnoremap <leader>rs :!bundle exec rspec spec --tag dev:true
+nnoremap <leader>rtm :!bundle exec rake test:models
+nnoremap <leader>rtc :!bundle exec rake test:controllers
+nnoremap <leader>rtf :!bundle exec rake test:integration
 
 imap <C-l> <Space>=><Space>
 
@@ -96,14 +99,14 @@ vmap <C-Down> ]egv
 
 " Tabularize
 if exists(":Tabularize")
-    nmap <Leader>a= :Tabularize /=<CR>
-    vmap <Leader>a= :Tabularize /=<CR>
-    nmap <Leader>a: :Tabularize /:\zs<CR>
-    vmap <Leader>a: :Tabularize /:\zs<CR>
+    nmap <leader>b= :Tabularize /=<CR>
+    vmap <leader>b= :Tabularize /=<CR>
+    nmap <leader>b: :Tabularize /:\zs<CR>
+    vmap <leader>b: :Tabularize /:\zs<CR>
 endif
 
 " Easy Buffer
-nmap <Leader>eb :EasyBuffer<CR>
+nmap <Leader>er :EasyBuffer<CR>
 
 let Tlist_Ctags_Cmd='/usr/local/bin/ctags'
 
