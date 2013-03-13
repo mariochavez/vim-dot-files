@@ -110,5 +110,9 @@ nmap <Leader>er :EasyBuffer<CR>
 
 let Tlist_Ctags_Cmd='/usr/local/bin/ctags'
 
+nmap <C-b> <C-o>
+nmap <C-m> <C-]>
+nmap gb <C-t>
+
 map <F2> :NERDTreeToggle<cr>
 map <F3> :TlistToggle<cr>
