@@ -37,6 +37,9 @@ set laststatus=2
 set relativenumber
 set undofile
 
+set rtp+=/usr/local/lib/python2.7/site-packages/powerline/bindings/vim
+"call vam#ActivateAddons(['powerline'])
+
 let mapleader = ","
 
 nnoremap / /\v
@@ -59,8 +62,8 @@ set colorcolumn=85
 nnoremap ; :
 au FocusLost * :wa
 " au InsertLeave * :%s=\s\+$==
-autocmd BufWritePre * :%s/\s\+$//e
-autocmd BufWritePre * :%s/\t/  /e
+" autocmd BufWritePre * :%s/\s\+$//e
+" autocmd BufWritePre * :%s/\t/  /e
 
 nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<CR>
 nnoremap <leader>ft Vatzf
