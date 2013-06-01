@@ -67,3 +67,6 @@
 [submodule "bundle/CoVim"]
 	path = bundle/CoVim
 	url = git://github.com/FredKSchott/CoVim.git
+[submodule "bundle/EasyGrep"]
+	path = bundle/EasyGrep
+	url = https://github.com/vim-scripts/EasyGrep
