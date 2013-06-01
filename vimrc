@@ -62,8 +62,8 @@ set colorcolumn=85
 nnoremap ; :
 au FocusLost * :wa
 " au InsertLeave * :%s=\s\+$==
-" autocmd BufWritePre * :%s/\s\+$//e
-" autocmd BufWritePre * :%s/\t/  /e
+autocmd BufWritePre *.rb, *.js, *.coffee :%s/\s\+$//e
+autocmd BufWritePre *.rb, *.js, *.coffee :%s/\t/  /e
 
 nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<CR>
 nnoremap <leader>ft Vatzf
