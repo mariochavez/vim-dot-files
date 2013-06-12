@@ -62,8 +62,9 @@ set colorcolumn=85
 nnoremap ; :
 au FocusLost * :wa
 " au InsertLeave * :%s=\s\+$==
-autocmd BufWritePre *.rb, *.js, *.coffee :%s/\s\+$//e
-autocmd BufWritePre *.rb, *.js, *.coffee :%s/\t/  /e
+autocmd FileType ruby,javascript,scss,coffee autocmd BufWritePre * :%s/\s\+$//e
+autocmd FileType ruby,javascript,scss,coffee autocmd BufWritePre * :%s/\t/  /e
+match ErrorMsg '\s\+$'
 
 nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<CR>
 nnoremap <leader>ft Vatzf
@@ -81,6 +82,8 @@ nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
+
+map <leader><leader> :ZoomWin<CR>
 
 " Yank to clipboard
 vmap <C-c> "+y
