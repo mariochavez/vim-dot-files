@@ -7,7 +7,7 @@ filetype plugin indent on
 
 syntax enable
 set background=dark
-colorscheme solarized
+colorscheme grb256 "solarized
 
 set nocompatible
 
@@ -84,6 +84,9 @@ nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
 map <leader><leader> :ZoomWin<CR>
+map <leader>cc :Rcontroller
+map <leader>mm :Rmodel
+map <leader>vv :Rview
 
 " Yank to clipboard
 vmap <C-c> "+y
@@ -97,11 +100,11 @@ nnoremap <leader>rtf :!bundle exec rake test:integration
 imap <C-l> <Space>=><Space>
 
 " Bubble single lines
-nmap <C-Up> [e
-nmap <C-Down> ]e
+nmap <C-j> [e
+nmap <C-k> ]e
 " Bubble multiple lines
-vmap <C-Up> [egv
-vmap <C-Down> ]egv
+vmap <C-j> [egv
+vmap <C-k> ]egv
 
 " Tabularize
 if exists(":Tabularize")
