@@ -57,7 +57,7 @@ vnoremap <tab> %
 set wrap
 set textwidth=79
 set formatoptions=qrn1
-set colorcolumn=85
+set colorcolumn=80
 
 nnoremap ; :
 au FocusLost * :wa
@@ -100,11 +100,11 @@ nnoremap <leader>rtf :!bundle exec rake test:integration
 imap <C-l> <Space>=><Space>
 
 " Bubble single lines
-nmap <C-j> [e
-nmap <C-k> ]e
+nmap <C-Up> [e
+nmap <C-Down> ]e
 " Bubble multiple lines
-vmap <C-j> [egv
-vmap <C-k> ]egv
+vmap <C-Up> [egv
+vmap <C-Down> ]egv
 
 " Tabularize
 if exists(":Tabularize")
@@ -123,5 +123,6 @@ nmap <C-b> <C-o>
 nmap <C-m> <C-]>
 nmap gb <C-t>
 
-map <F2> :NERDTreeToggle<cr>
+" Open alternate file in a vertical split
+map <leader>av :AV<CR>
 map <F3> :TlistToggle<cr>
