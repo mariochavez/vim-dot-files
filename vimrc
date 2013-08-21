@@ -7,7 +7,7 @@ filetype plugin indent on
 
 syntax enable
 set background=dark
-colorscheme grb256 "solarized
+colorscheme Tomorrow-Night
 
 set nocompatible
 
