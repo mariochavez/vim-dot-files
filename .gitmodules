@@ -64,12 +64,6 @@
 [submodule "bundle/vim-dispatch"]
 	path = bundle/vim-dispatch
 	url = git://github.com/tpope/vim-dispatch.git
-[submodule "bundle/CoVim"]
-	path = bundle/CoVim
-	url = git://github.com/FredKSchott/CoVim.git
-[submodule "bundle/EasyGrep"]
-	path = bundle/EasyGrep
-	url = https://github.com/vim-scripts/EasyGrep
 [submodule "bundle/zoomwin"]
 	path = bundle/zoomwin
 	url = git://github.com/regedarek/ZoomWin.git
