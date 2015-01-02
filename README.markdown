@@ -9,6 +9,12 @@ Install
     git submodule init
     git submodule update
 
+Update
+========
+
+    git submodule foreach git pull origin master
+
+
 VIM Room
 ==========
 Info: http://projects.mikewest.org/vimroom/
