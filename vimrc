@@ -36,6 +36,7 @@ set backspace=indent,eol,start
 set laststatus=2
 set relativenumber
 set undofile
+set wildignore+=*.swp,*.un~,tmp/**,*DS_Store*,coverage/*,.keep,_build/**,deps/**,node_modules/**
 
 set rtp+=/usr/local/lib/python2.7/site-packages/powerline/bindings/vim
 "call vam#ActivateAddons(['powerline'])
