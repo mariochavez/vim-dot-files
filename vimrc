@@ -38,8 +38,11 @@ set relativenumber
 set undofile
 set wildignore+=*.swp,*.un~,tmp/**,*DS_Store*,coverage/*,.keep,_build/**,deps/**,node_modules/**
 
-set rtp+=/usr/local/lib/python2.7/site-packages/powerline/bindings/vim
+"set rtp+=/usr/local/lib/python2.7/site-packages/powerline/bindings/vim
 "call vam#ActivateAddons(['powerline'])
+python from powerline.vim import setup as powerline_setup
+python powerline_setup()
+python del powerline_setup
 
 let mapleader = ","
 
@@ -156,3 +159,5 @@ vmap <Enter> <Plug>(EasyAlign)
 
 " Start interactive EasyAlign for a motion/text object (e.g. gaip)
 nmap ga <Plug>(EasyAlign)"
+
+autocmd BufRead,BufNewFile *.es6 setfiletype javascript
