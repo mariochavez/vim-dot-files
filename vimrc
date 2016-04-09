@@ -95,8 +95,6 @@ map <leader>vv :Rview
 " Yank to clipboard
 vmap <C-c> "+y
 
-nnoremap <leader>rc :!bundle exec cucumber --tags @dev
-nnoremap <leader>rs :!bundle exec rspec spec --tag dev:true
 nnoremap <leader>rtm :!bundle exec rake test:models
 nnoremap <leader>rtc :!bundle exec rake test:controllers
 nnoremap <leader>rtf :!bundle exec rake test:integration
@@ -161,3 +159,8 @@ vmap <Enter> <Plug>(EasyAlign)
 nmap ga <Plug>(EasyAlign)"
 
 autocmd BufRead,BufNewFile *.es6 setfiletype javascript
+autocmd BufRead,BufNewFile *.*.jsx setfiletype javascript
+
+nnoremap <leader>el :ElmEvalLine<CR>
+vnoremap <leader>es :<C-u>ElmEvalSelection<CR>
+nnoremap <leader>em :ElmMakeCurrentFile<CR>
