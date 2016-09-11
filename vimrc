@@ -1,4 +1,3 @@
-
 filetype on
 filetype off
 call pathogen#runtime_append_all_bundles()
@@ -164,3 +163,7 @@ autocmd BufRead,BufNewFile *.*.jsx setfiletype javascript
 nnoremap <leader>el :ElmEvalLine<CR>
 vnoremap <leader>es :<C-u>ElmEvalSelection<CR>
 nnoremap <leader>em :ElmMakeCurrentFile<CR>
+
+let g:ctrlp_map = '<leader>t'
+let g:ctrlp_cmd = 'CtrlP'
+let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']

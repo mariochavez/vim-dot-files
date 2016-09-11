@@ -93,10 +93,9 @@ alias tml="tmux list-sessions"
 alias tma="tmux -2 attach -t $1"
 alias tmk="tmux kill-session -t $1"
 
-#docker-machine start default
-#eval "$(docker-machine env default)"
 
-export PATH="/usr/local/bin:$HOME/.rbenv/bin:/Applications/Postgres.app/Contents/Versions/9.4/bin:/Applications/MySQLWorkbench.app/Contents/MacOS:$PATH:$HOME/bin"
+export PATH="/usr/local/bin:/Applications/Postgres.app/Contents/Versions/9.4/bin:/Applications/MySQLWorkbench.app/Contents/MacOS:$PATH:$HOME/bin"
 
 alias clean-dir='find . -name "*.orig" -print0 -delete; find . -name "*.un~" -print0 -delete; find . -name "*.orig" -print0 -delete; find . -name "*.DS_Store"; find . -name "*.swp" -print0 -delete'
+
 eval "$(rbenv init -)"
