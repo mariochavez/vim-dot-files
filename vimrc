@@ -60,7 +60,7 @@ vnoremap <tab> %
 set wrap
 set textwidth=79
 set formatoptions=qrn1
-set colorcolumn=80
+set colorcolumn=120
 
 nnoremap ; :
 au FocusLost * :wa
@@ -167,3 +167,10 @@ nnoremap <leader>em :ElmMakeCurrentFile<CR>
 let g:ctrlp_map = '<leader>t'
 let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
+
+set swapfile
+set dir=~/tmp
+
+set backup
+set backupdir=~/tmp
+set dir=~/tmp
