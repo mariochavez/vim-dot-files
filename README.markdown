@@ -15,6 +15,16 @@ Update
     git submodule foreach git pull origin master
 
 
+Install new plugin
+==========
+
+    cd ~/.vim
+    mkdir ~/.vim/bundle
+    git submodule add http://github.com/tpope/vim-fugitive.git bundle/fugitive
+    git add .
+    git commit -m "Install Fugitive.vim bundle as a submodule."
+
+
 VIM Room
 ==========
 Info: http://projects.mikewest.org/vimroom/
