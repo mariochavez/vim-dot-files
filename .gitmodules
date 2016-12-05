@@ -94,3 +94,6 @@
 [submodule "bundle/vim-es6"]
 	path = bundle/vim-es6
 	url = git@github.com:isRuslan/vim-es6.git
+[submodule "bundle/elm-vim"]
+	path = bundle/elm-vim
+	url = git@github.com:ElmCast/elm-vim.git
