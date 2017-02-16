@@ -92,7 +92,8 @@ map <leader>mm :Rmodel
 map <leader>vv :Rview
 
 " Yank to clipboard
-vmap <C-c> "+y
+" vmap <C-c> "+y
+vmap <C-c> :w !pbcopy<CR><CR>
 
 nnoremap <leader>rtm :!bundle exec rake test:models
 nnoremap <leader>rtc :!bundle exec rake test:controllers
@@ -166,7 +167,10 @@ nnoremap <leader>em :ElmMakeCurrentFile<CR>
 
 let g:ctrlp_map = '<leader>t'
 let g:ctrlp_cmd = 'CtrlP'
-let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
+let g:ctrlp_custom_ignore = ['.git', 'cd %s && git ls-files -co --exclude-standard']
+
+let g:vimrubocop_keymap = 0
+nmap <Leader>r :RuboCop<CR>
 
 set swapfile
 set dir=~/tmp

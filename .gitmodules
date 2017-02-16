@@ -97,3 +97,6 @@
 [submodule "bundle/elm-vim"]
 	path = bundle/elm-vim
 	url = git@github.com:ElmCast/elm-vim.git
+[submodule "bundle/vim-rubocop"]
+	path = bundle/vim-rubocop
+	url = git@github.com:ngmy/vim-rubocop.git
